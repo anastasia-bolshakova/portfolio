@@ -9,6 +9,47 @@
   let refreshCaseIndex = () => {};
   document.documentElement.classList.remove('no-js');
 
+  const atlas = document.getElementById('lyubo-launch');
+  if (atlas) {
+    let press = null, dragged = false;
+    atlas.classList.add('can-pan');
+    atlas.addEventListener('pointerdown', event => {
+      if (event.pointerType !== 'mouse' || event.button !== 0 || event.shiftKey ||
+          !event.target.closest('.launch-composition') || atlas.scrollWidth <= atlas.clientWidth) return;
+      press = {id:event.pointerId, x:event.clientX, left:atlas.scrollLeft};
+      dragged = false;
+      atlas.classList.add('pan-pressed');
+    });
+    atlas.addEventListener('dragstart', event => { if (press) event.preventDefault(); });
+    window.addEventListener('pointermove', event => {
+      if (!press || press.id !== event.pointerId) return;
+      if (!(event.buttons & 1)) { endPan(); return; }
+      const dx = event.clientX - press.x;
+      if (!dragged && Math.abs(dx) < 5) return;
+      if (!dragged) {
+        dragged = true;
+        atlas.setPointerCapture(event.pointerId);
+        atlas.classList.add('is-panning');
+      }
+      atlas.scrollLeft = press.left - dx;
+    });
+    function endPan(event) {
+      if (!press || (event?.pointerId != null && event.pointerId !== press.id)) return;
+      const id = press.id;
+      press = null;
+      atlas.classList.remove('pan-pressed', 'is-panning');
+      if (atlas.hasPointerCapture(id)) atlas.releasePointerCapture(id);
+      setTimeout(() => { dragged = false; }, 0);
+    }
+    window.addEventListener('pointerup', endPan);
+    window.addEventListener('pointercancel', endPan);
+    window.addEventListener('blur', endPan);
+    atlas.addEventListener('lostpointercapture', endPan);
+    atlas.addEventListener('click', event => {
+      if (dragged && event.detail) { event.preventDefault(); event.stopPropagation(); }
+    }, true);
+  }
+
   // Original publication slides: native swipe, keyboard, buttons and image zoom.
   all('[data-publication-reader]').forEach(reader => {
     const track = reader.querySelector('.reader-track');
