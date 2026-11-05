@@ -1,0 +1,242 @@
+/* Lyubo: media sized to the viewport, spatial notes and original evidence. */
+.lyubo-main .case-overview{row-gap:24px}
+.lyubo-main .case-overview>.case-scope{grid-column:1/-1;max-width:none;width:100%;margin:8px 0 0;justify-content:space-between;gap:14px 24px;padding:20px 0;border-block:1px solid var(--line)}
+.lyubo-main .case-overview .overview-media img{max-height:350px;width:auto;margin-left:auto}
+.lyubo-main .case-results-overview>.story-results,#lyubo-party>.story-results{grid-template-columns:repeat(4,minmax(0,1fr));column-gap:34px}
+.lyubo-main .result-tile{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;font-size:15px}
+.lyubo-main .result-number{order:-1;white-space:nowrap}
+.lyubo-main .result-label{grid-column:1/-1}
+.project-development{display:grid;grid-template-columns:1.1fr 1fr;gap:65px;padding-top:34px;margin-top:28px;border-top:1px solid var(--line)}
+.project-growth{font-size:clamp(21px,2.1vw,29px);line-height:1.35;letter-spacing:-.025em}
+.project-people{font-size:14px;line-height:1.55}
+.project-people .team-achievement{font-size:18px;margin:0 0 20px}
+.project-people .collaborators{margin:0}
+.project-people .collaborators>p{font-size:12px}
+.project-people .collaborators ul{display:flex;flex-wrap:wrap;gap:7px 19px;margin-top:9px}
+.project-people .collaborators li{font-size:14px}
+.lyubo-main .chapter-intro{padding:50px 0 10px}
+.chapter-intro>h2,.lyubo-main .chapter-title{font-size:clamp(38px,5vw,68px);line-height:1.07;letter-spacing:-.055em;margin-bottom:25px}
+.chapter-intro .details{max-width:720px}
+.chapter-intro .story-block{margin:0}
+#lyubo-social>.story-meta>span{display:none}
+#lyubo-social>.story-heading{font-size:32px}
+.lyubo-main .video-subtitle{white-space:pre-line}
+.lyubo-main .background-video{max-height:min(520px,calc(100svh - 160px))}
+.lyubo-main .launch-path{margin:25px 0 10px}
+.lyubo-main .launch-label{margin-bottom:24px}
+.lyubo-main .launch-map{position:relative;isolation:isolate;min-height:495px}
+.lyubo-main .launch-chain{display:block;position:static;overflow:visible;margin:0;padding:0}
+.lyubo-main .launch-chain:before{display:none}
+.lyubo-main .launch-chain>li{position:absolute;display:block;padding:5px 0;background:#fff;z-index:1}
+.lyubo-main .launch-chain .launch-step{display:block;margin:0;padding:0;border:0}
+.lyubo-main .launch-step h3{font-size:17px;line-height:1.2;margin-bottom:7px;letter-spacing:-.02em}
+.lyubo-main .launch-step p{font-size:14px;line-height:1.4;margin:0}
+.lyubo-main .launch-chain>li:nth-child(1){left:0;top:95px;width:21%}
+.lyubo-main .launch-chain>li:nth-child(2){left:7%;top:290px;width:25%}
+.lyubo-main .launch-chain>li:nth-child(3){left:27%;top:0;width:24%}
+.lyubo-main .launch-chain>li:nth-child(4){left:30%;top:165px;width:27%}
+.lyubo-main .launch-chain>li:nth-child(5){left:44%;top:335px;width:23%}
+.lyubo-main .launch-chain>li:nth-child(6){left:59%;top:15px;width:27%}
+.lyubo-main .launch-chain>li:nth-child(7){left:66%;top:205px;width:23%}
+.lyubo-main .launch-chain>li:nth-child(8){left:79%;top:360px;width:21%}
+.launch-picture{position:absolute;z-index:2}
+.launch-picture .media-button img{width:auto;max-height:100px;max-width:100%;object-fit:contain}
+.launch-picture .media-figure{transform:rotate(-3deg)}
+.launch-picture.pic-corridor{left:0;top:302px;width:5%}
+.launch-picture.pic-language{left:18%;top:0;width:7%}
+.launch-picture.pic-game{left:33%;top:360px;width:8%}
+.launch-picture.pic-product{left:89%;top:0;width:7%}
+.launch-picture.pic-team{left:68%;top:360px;width:9%}
+.launch-picture.pic-detail{left:91%;top:205px;width:8%}
+.measured-wires{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none;z-index:0}
+.measured-wires path{stroke:#b0a5a3;stroke-width:.8;fill:none;vector-effect:non-scaling-stroke}
+.lyubo-main .book{--spread-height:min(500px,calc(100svh - 222px));width:min(100%,calc(var(--spread-height) * 1.425));margin:28px auto 40px;scroll-margin-top:145px}
+.lyubo-main .book-stage{height:auto;aspect-ratio:1.425;position:relative;isolation:isolate;background:#f8f7f4;box-shadow:0 13px 22px -13px #302a2950,0 3px 0 #e8e5e0,0 5px 0 #f4f1ec}
+.lyubo-main .book-page{width:100%;height:100%}
+.lyubo-main .book-page .media-set{display:flex;gap:0;align-items:stretch;width:100%;height:100%}
+.lyubo-main .book-page .media-figure{margin:0;flex:1 1 0;min-width:0;height:100%}
+.lyubo-main .book-page .media-button{width:100%;height:100%;display:block;padding:0;background:transparent}
+.lyubo-main .book-page img{display:block;width:100%;height:100%;object-fit:contain}
+.lyubo-main .book-page .spread-pair{align-items:center}
+.lyubo-main .book-page .spread-pair .media-figure{height:auto}
+.lyubo-main .book-page .spread-pair img{height:auto}
+.lyubo-main .book-stage:after{content:'';position:absolute;inset:0;pointer-events:none;z-index:2;background:linear-gradient(90deg,transparent 45%,#00000004 48%,#00000020 49.85%,#ffffff30 50.15%,#00000006 52%,transparent 55%);box-shadow:inset 0 0 1px #0006}
+.lyubo-main .book-controls{padding-top:18px;gap:18px}
+.lyubo-main .book-count{display:block}
+.book-edge{position:absolute;z-index:3;top:0;bottom:0;width:14%;background:transparent;border:0;padding:0;cursor:pointer}
+.book-edge.edge-prev{left:0}.book-edge.edge-next{right:0}
+.book-edge:disabled{pointer-events:none}
+.book-edge:not(:disabled):hover{background:#ffffff18}
+.book-edge:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.lyubo-main .book-page .seam-spread{display:flex;aspect-ratio:1584/1123;height:auto;position:absolute;inset:0;margin:auto}
+.seam-spread>span{display:block;overflow:hidden;width:50%;position:relative;aspect-ratio:792/1123}
+.lyubo-main .book-page .seam-spread img{position:absolute;max-width:none;width:202.02%;height:100%;object-fit:fill}
+.seam-spread>span:first-child img{left:0}.seam-spread>span:last-child img{right:0}
+#magazine-description{display:flex;gap:20px;justify-content:space-between;border-block:1px solid var(--line);padding:20px 0}
+#magazine-description p{font-size:14px;margin:0}
+.lyubo-main #magazine-concept{grid-template-columns:1fr .8fr;align-items:center;gap:70px}
+#magazine-concept .media-button img{max-height:270px;width:auto;margin:auto}
+#editing-approach{grid-template-columns:1.3fr .7fr;gap:70px;align-items:center}
+#editing-approach .media-button img{max-height:300px;width:auto;margin:auto}
+.atmosphere-board{position:relative;display:grid;gap:24px;align-items:center;margin:30px 0 38px;padding:16px 10px}
+.atmosphere-board .story-block{margin:0}
+.atmosphere-board .story-block h3{font-size:24px}
+.atmosphere-board .story-block p{font-size:16px;line-height:1.5}
+.atmosphere-board .media-figure{min-width:0;transition:transform .35s;transform:rotate(-3deg)}
+.atmosphere-board .media-figure:nth-child(odd){transform:rotate(3deg)}
+.atmosphere-board .media-button img{width:auto;max-width:100%;max-height:240px;object-fit:contain;margin:auto}
+.atmosphere-board figcaption{font-size:11px;line-height:1.4}
+.party-board{grid-template-columns:repeat(12,minmax(0,1fr));gap:22px}
+.party-board .party-note{grid-column:1/7;grid-row:1}
+.party-board .shot-0{grid-column:8/10;grid-row:1}
+.party-board .shot-1{grid-column:2/6;grid-row:2;transform:rotate(-4deg) translateY(-12px)}
+.party-board .shot-2{grid-column:6/10;grid-row:2}
+.party-board .shot-3{grid-column:10/13;grid-row:1/3;align-self:center}
+.party-board .shot-0 img{max-height:175px}
+.party-board .shot-1 img{max-height:220px}
+.party-board .shot-2 img{max-height:185px}
+.party-board .shot-3 img{max-height:250px}
+.lineup-board{grid-template-columns:1.35fr .7fr .7fr;gap:50px}
+.lineup-board .media-figure:last-child{align-self:end}
+.lineup-board .media-button img{max-height:230px}
+.lyubo-main .process-board{grid-template-columns:1fr .65fr 1.45fr;gap:65px;padding:20px 10px 28px;isolation:isolate}
+.lyubo-main .process-stage{position:relative;z-index:1;gap:22px}
+.lyubo-main .process-stage>h3{background:white;width:fit-content;padding:2px 7px}
+.lyubo-main .process-stage .media-figure{margin:0}
+.lyubo-main .process-stage.stage-0 .media-figure{width:100%;margin:0}
+.lyubo-main .process-stage.stage-0 img{max-height:185px}
+.lyubo-main .process-stage.stage-0 .media-figure:last-child img{max-width:min(100%,287px);max-height:185px}
+.lyubo-main .process-stage.stage-1{padding-top:25px}
+.lyubo-main .process-stage.stage-1 img{max-height:100px}
+.lyubo-main .process-stage.stage-1 .media-figure:last-child img{max-height:100px}
+.lyubo-main .board-result-pair{gap:28px}
+.lyubo-main .board-result-pair img{max-height:185px}
+.lyubo-main .board-result-pair .media-figure:nth-child(2){margin-top:32px}
+.lyubo-main .board-result-pair .media-figure:nth-child(3){width:88%;margin-left:0}
+.lyubo-main .process-stage figcaption{background:white;width:fit-content;padding:3px 4px}
+.cocktail-board{grid-template-columns:.85fr 1.1fr 1fr;gap:45px}
+.cocktail-board .media-set{gap:15px}
+.cocktail-board .media-button img{max-height:205px}
+.cocktail-board p{font-size:13px;line-height:1.4;margin-top:15px}
+.preparty-board{grid-template-columns:1fr .65fr 1fr .7fr;gap:35px}
+.preparty-board .media-figure:nth-child(2){align-self:start}
+.preparty-board .media-figure:nth-child(3){margin-top:65px}
+.preparty-board .media-figure:nth-child(4){align-self:start;transform:rotate(5deg)}
+.preparty-board .media-button img{max-height:260px}
+.lyubo-main .press-carousel{max-width:100%;margin:25px 0}
+.lyubo-main .carousel-track{gap:28px;align-items:center}
+.lyubo-main .carousel-item{flex:0 0 auto;width:clamp(190px,20vw,285px);min-width:0}
+.lyubo-main .carousel-item .media-button img{max-height:min(380px,calc(100svh - 250px));width:auto;max-width:100%;object-fit:contain;margin:auto}
+.lyubo-main .carousel-controls{margin-bottom:18px}
+.smesh-board{grid-template-columns:1.4fr .6fr .7fr .65fr;gap:36px}
+.smesh-board .media-button img{max-height:230px}
+.smesh-board .media-figure:last-child{align-self:end;transform:rotate(4deg)}
+#smeshariki-promo{grid-template-columns:1.5fr .6fr;gap:65px;align-items:center}
+#smeshariki-promo .media-button img{max-height:320px;width:auto;margin:auto}
+.lyubo-main .publication-reader{width:min(100%,420px);margin:20px auto 25px}
+.lyubo-main .reader-track{height:min(430px,calc(100svh - 260px));align-items:stretch;scrollbar-width:none}
+.lyubo-main .reader-track::-webkit-scrollbar{display:none}
+.lyubo-main .reader-slide{display:flex;align-items:center;justify-content:center;height:100%}
+.lyubo-main .reader-slide .media-figure,.lyubo-main .reader-slide .media-button{height:100%;width:100%;display:block}
+.lyubo-main .reader-slide img,.lyubo-main .reader-slide video{display:block;height:100%;width:100%;max-height:100%;object-fit:contain}
+.lyubo-main .reader-controls{padding-top:12px}
+.lyubo-main .reader-heading{font-size:12px;margin-bottom:12px}
+.lyubo-main .publication-reader>.example-link{display:block;width:fit-content;margin:12px auto 0;font-size:12px}
+.lyubo-main .social-examples{gap:45px}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+ .atmosphere-board .media-figure:hover,.launch-picture .media-figure:hover{transform:translateY(-6px) rotate(0);z-index:4}
+}
+@media(max-width:1150px){
+ .lyubo-main .launch-map{min-height:0}
+ .lyubo-main .launch-chain{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:35px 65px}
+ .lyubo-main .launch-chain>li{position:relative;left:auto!important;top:auto!important;width:auto!important}
+ .lyubo-main .launch-chain>li:nth-child(even){margin-top:45px}
+ .launch-picture{display:none}
+ .lyubo-main .launch-map>.measured-wires{display:none}
+ .lyubo-main .launch-step p{font-size:15px}
+ .lyubo-main .launch-step h3{font-size:21px}
+ .lyubo-main .process-board{gap:30px}
+ .preparty-board,.smesh-board{gap:22px}
+}
+@media(max-width:700px){
+ .lyubo-main .case-overview>.case-scope{justify-content:flex-start;font-size:12px}
+ .lyubo-main .case-overview .overview-media img{max-height:280px;margin:auto}
+ .lyubo-main .case-results-overview>.story-results,#lyubo-party>.story-results{gap:10px;grid-template-columns:repeat(4,minmax(0,1fr))}
+ .lyubo-main .result-tile{font-size:10px;line-height:1.4;overflow-wrap:anywhere}
+ .lyubo-main .result-number{font-size:clamp(23px,6.2vw,40px);letter-spacing:-.06em;margin-bottom:9px;white-space:nowrap;overflow-wrap:normal}
+ #lyubo-party .result-followup{font-size:11px;overflow-wrap:normal}
+ .project-development{grid-template-columns:1fr;gap:24px;padding-top:24px}
+ .project-growth{font-size:23px}
+ .project-people .team-achievement{font-size:17px}
+ .lyubo-main .launch-chain{gap:25px}
+ .lyubo-main .launch-chain>li:nth-child(even){margin-top:45px}
+ .lyubo-main .launch-step h3{font-size:17px}
+ .lyubo-main .launch-step p{font-size:13px}
+ .lyubo-main .book{--spread-height:calc(100svh - 220px);margin:24px auto 32px;scroll-margin-top:130px}
+ .lyubo-main .book-controls{gap:12px;padding-top:15px}
+ .lyubo-main .book-label{font-size:11px}
+ .lyubo-main .book-count{font-size:11px}
+ #magazine-description{gap:16px;flex-wrap:wrap}
+ #magazine-description p{font-size:12px}
+ .lyubo-main #magazine-concept,#editing-approach,#smeshariki-promo{grid-template-columns:1fr;gap:25px}
+ #magazine-concept .media-button img,#editing-approach .media-button img{max-height:220px}
+ .lyubo-main .background-video{aspect-ratio:4/3;height:auto;min-height:275px;max-height:400px}
+ .lyubo-main .video-heading h2{font-size:clamp(28px,7vw,40px)}
+ .lyubo-main .video-heading .video-subtitle{font-size:14px;margin-top:12px}
+ .party-board{gap:18px}
+ .party-board .party-note{grid-column:1/9;grid-row:1}
+ .party-board .shot-0{grid-column:9/13;grid-row:1}
+ .party-board .shot-1{grid-column:1/7;grid-row:2}
+ .party-board .shot-2{grid-column:7/13;grid-row:2}
+ .party-board .shot-3{grid-column:5/10;grid-row:3}
+ .atmosphere-board .story-block h3{font-size:22px}
+ .atmosphere-board .story-block p{font-size:14px}
+ .atmosphere-board .media-button img{max-height:180px}
+ .lineup-board{grid-template-columns:1fr 1fr;gap:22px}
+ .lineup-board>.story-block{grid-column:1/-1}
+ .lyubo-main .process-board{grid-template-columns:1fr;gap:35px;padding-inline:4px}
+ .lyubo-main .process-stage{grid-template-columns:1fr 1fr;gap:20px}
+ .lyubo-main .process-stage>h3{grid-column:1/-1}
+ .lyubo-main .process-stage.stage-1{grid-template-columns:repeat(3,minmax(0,1fr));padding:0}
+ .lyubo-main .process-stage.stage-1 img{max-height:90px}
+ .lyubo-main .board-result-pair{grid-column:1/-1}
+ .lyubo-main .process-board>.measured-wires{display:none}
+ .cocktail-board{grid-template-columns:1fr;gap:30px}
+ .cocktail-board .media-button img{max-height:200px}
+ .preparty-board,.smesh-board{grid-template-columns:1fr 1fr;gap:24px}
+ .preparty-board>.story-block,.smesh-board>.story-block{grid-column:1/-1}
+ .preparty-board .media-figure:nth-child(3){margin-top:40px}
+ .preparty-board .media-figure:last-child{grid-column:1/3;max-width:60%;justify-self:center}
+ .smesh-board .media-figure:last-child{grid-column:1/3;width:48%;justify-self:center}
+ .lyubo-main .carousel-item{width:210px}
+ .lyubo-main .publication-reader{max-width:340px}
+ .lyubo-main .reader-track{height:min(410px,calc(100svh - 260px))}
+}
+@media(prefers-reduced-motion:reduce){.atmosphere-board .media-figure{transition:none}}
+
+.lyubo-main .book{overflow-anchor:none}
+
+#lyubo-launch{scroll-margin-top:150px}
+.lyubo-main .process-board .media-button{background:transparent}
+.lyubo-main .process-stage.stage-0 .media-figure:first-of-type img{max-height:175px}
+.lyubo-main .process-stage.stage-0 .media-figure:last-child img{max-height:155px}
+.lyubo-main .board-result-pair img{max-height:170px}
+.lyubo-main .publication-reader{scroll-margin-top:145px}
+.lyubo-main .reader-track{height:min(400px,calc(100svh - 300px))}
+@media(max-width:1150px){.lyubo-main .launch-map{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.lyubo-main .launch-chain{grid-column:1/-1}.launch-picture{display:block;position:static;width:auto!important;max-width:100%}.launch-picture .media-button img{max-height:110px;margin:auto}}
+
+@media(min-width:701px){
+.lyubo-main .board-result-pair .media-figure:nth-child(1){grid-column:1;grid-row:1}
+.lyubo-main .board-result-pair .media-figure:nth-child(2){grid-column:1;grid-row:2;margin-top:0}
+.lyubo-main .board-result-pair .media-figure:nth-child(2) img{max-height:140px}
+.lyubo-main .board-result-pair .media-figure:nth-child(3){grid-column:2;grid-row:1;align-self:start}
+.lyubo-main .board-result-pair .media-figure:nth-child(3) img{max-height:130px}
+.lyubo-main .board-result-pair .media-figure:nth-child(4){grid-column:2;grid-row:2;align-self:end;margin-top:85px}
+.lyubo-main .board-result-pair .media-figure:nth-child(4) img{max-height:130px}
+}
+
+@media(max-width:700px){
+.lyubo-main .case-results-overview>.story-results,#lyubo-party>.story-results{grid-template-columns:repeat(4,150px);gap:20px;overflow-x:auto;scroll-snap-type:x proximity;padding-bottom:14px;scrollbar-width:thin}
+.lyubo-main .case-results-overview .result-tile,#lyubo-party>.story-results .result-tile{font-size:12px;overflow-wrap:normal;scroll-snap-align:start}
+.lyubo-main .case-results-overview .result-number,#lyubo-party>.story-results .result-number{font-size:32px}
+}
